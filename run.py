@@ -18,7 +18,7 @@ def admin():
         url = e + "/" + v
         req = rq.get(url)
         if req.status_code != 404 and req.status_code != 401:
-            if "Page not Found" in req.content:
+            if req.content == "Page not Found":
                 pass
             else:
                 print(cs(f"[-] Page Found : {url}", "green"))
