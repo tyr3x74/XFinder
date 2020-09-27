@@ -71,8 +71,7 @@ def main():
     elif x == 3:
         domain()
     else:
-        system("clear")
-        exit()
+        raise Exception("Enter correct input!")
             
 if __name__ == "__main__":
     main()
