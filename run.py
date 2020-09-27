@@ -63,7 +63,7 @@ def domain():
         
 def main():
     print("====================\n      Main Menu\n====================\n[1]> Admin finder\n[2]> Dir finder\n[3]> Domain finder\n====================")
-    x = int(input('[@tyr3x]> '))
+    x = int(input('[@tyr3x74]> '))
     if x == 1:
         admin()
     elif x == 2:
