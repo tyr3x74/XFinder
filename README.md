@@ -1,4 +1,4 @@
-# Installation & Usage :
+# Installation :
 
 `git clone https://github.com/tyr3x74/XFinder.git`
 
