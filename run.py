@@ -1,5 +1,4 @@
 import requests as rq
-from stringcolor import *
 from os import system
 ################################
 ## Author : Tyr3X             ##
@@ -78,10 +77,10 @@ def domain():
     
     for i in f1:
         i = i.replace("\n", "")
-        link = i + "." + x
-        req = rq.get(link)
+        url = i + "." + x
+        req = rq.get(url)
         if req.status_code != 404 and req.status_code != 401:
-            if "Page not Found" in req.content:
+            if req.content == "Page not Found":
                 error.append(url)
                 pass
             else:
